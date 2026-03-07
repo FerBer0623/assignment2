@@ -1,0 +1,59 @@
+Git Lab Tutorials Completion Dates:
+- Learn Git Branching: March 3, 2026. Completed all levels of Main – Introduction Sequence, and Remotes – Push & Pull -- Git Remote on March 3, 2026
+- Visualizing Git: March 3, 2026
+- Try Git Tutorial and Lab Tutorials "Git Basics": March 4, 2026
+
+GitHub Account Setup Date: March 5, 2026 (just created it for this assignment)
+
+Git Client Setup Date: March 5, 2026 (installed Git for Windows)
+
+Repository: https://github.com/FerBer0623/assignment2
+
+=== ANSWERS ===
+
+1.Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 816 bytes | 816.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/FerBer0623/assignment2.git
+   f4975e5..fd12765  master -> master
+
+2. Number of commits: I ran "git log --oneline | wc -l" and it showed 9 commits total in the repository so far.
+
+
+3. When was README.md modified last? I used the command "git log -1 --format=%cd README.md" and it showed "Fri Mar 6 18:27:05 2026 -0500". This means the file was last modified on Friday, March 6, 2026 at 6:27 PM Eastern Time. This is when I added my name and FSUID to the file.
+
+4. Two reasons why branches are used in Git:
+   - Branches let you work on new features or experiment with code without affecting the main working version. If something breaks, the main branch stays safe and your teammates can keep working.
+   - When multiple people are working on the same project, branches let everyone work on different features at the same time. Later, you can merge everything together when each feature is ready.
+
+5. Difference between git log and git status:
+   git log shows the commit history - it displays all past commits with their messages, who made them, and when. It's like looking at a timeline of everything that's been saved to the repository.
+   git status shows the current state of your working directory - which files you've modified, added, or deleted that haven't been committed yet. It tells you what's changed since your last commit.
+
+6. Command to see commits where "Vehicle.h" was one of the committed files:
+   git log --oneline -- Vehicle.h
+
+7. Command to see commits whose commit message contains "file":
+   git log --grep="file"
+
+8. OOP Concepts:
+   I. Inheritance: When a class gets properties and methods from another class. For example, if you have a general "Vehicle" class, a "Car" class can inherit from it so you don't have to rewrite the same code.
+   
+   II. Polymorphism: The ability for different types of objects to respond to the same method call in their own unique way. For example, if you have a "draw()" method, a Circle object draws differently than a Square object.
+   
+   III. Encapsulation: Bundling data and methods together inside a class and hiding internal details from the outside. This protects data from being accidentally modified.
+
+9. Main difference between Dictator and Lieutenants and Integration Manager workflow:
+   The Integration Manager workflow has one person who pulls changes from all developers and pushes to the central repository.
+   
+   The Dictator and Lieutenants workflow has multiple lieutenants who manage subgroups of developers, and one dictator who pulls from lieutenants and pushes to the central repository.
+   
+   The main difference is that Integration Manager has one person doing all the work, while Dictator and Lieutenants spreads the work across multiple people.
+
+10. Benefits for 100 developers using Dictator and Lieutenants workflow:
+    With 100 developers, one person would be overwhelmed trying to merge everyone's code. The Dictator and Lieutenants workflow organizes developers into smaller teams with lieutenants managing each team. This distributes the work, makes conflict resolution easier, and prevents bottlenecks.
+
